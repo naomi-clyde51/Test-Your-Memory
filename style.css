@@ -1,0 +1,72 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: Georgia, helvetica, arial, serif, sans-serif;
+  margin: 2em;
+  background-color: #A9BABC;
+  color: white;
+  text-align: center;
+}
+
+h1, h2 {
+  font-style: bold;
+  color: white;
+  font-family: Verdana, arial, verdana, sans-serif, serif, cursive;
+}
+
+.gradient-text {
+  /*background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);*/
+  background-image: linear-gradient(to left, lightgreen, lightblue, pink, lightyellow);
+  background-color: #f8ceec;
+
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+
+/*The Stop button will not be visible at the beginning of the game*/
+.hidden {
+  display: none;
+}
+
+#button1 {
+    background: lightgreen;
+}
+
+#button2 {
+    background: lightblue;
+}
+
+#button3 {
+    background: pink;
+}
+
+#button4 {
+    background: lightyellow;
+}
+
+/* if you click on the first button, it should change from light green to regular green for as long as you are holding down the mouse*/
+#button1:active, #button1.lit {
+    background: green;
+}
+
+#button2:active, #button2.lit {
+    background: blue;
+}
+
+#button3:active, #button3.lit {
+    background: red;
+}
+
+#button4:active, #button4.lit {
+    background: yellow;
+}
